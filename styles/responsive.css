@@ -1,0 +1,23 @@
+@media screen and (max-width:700px) {
+    header .container{
+        padding: 8px;
+    }
+
+    header .informacoes .logo{
+        display: none;
+    }
+
+
+    .botoes button{
+        padding-top: 5px;
+    }
+    
+    .botao-infos{
+        width: 160px;
+    }
+
+    .principal-filme .container{
+        margin-left: 20px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="styles/owl/owl.carousel.css">
+    <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div id="nav" class="container">
+            <div class="informacoes">
+                <img class="logo" src="./img/NetflixLogo.png" alt="NETFLIX">
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Opções</a>
+                </nav>
+            </div>
+            <div class="perfil">
+                <i class="fas fa-search"></i>
+                <i class="far fa-bell"></i>
+                <img class="img-perfil" src="./img/perfil.png" alt="Perfil">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="teste">
+            <div class="principal-filme">
+                <div class="container">
+                    <!-- <h3 class="titulo">Round 6</h3> -->
+                    <img class="titulo" src="./img/Round6Logo.png" alt="Logo Round 6">
+                    <p class="descricao">Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao-assistir">
+                            <i class="fas fa-play"></i>
+                            Assistir
+                        </button>
+                        <button role="button" class="botao-infos">
+                            <i class="fas fa-info"></i>
+                            Mais informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
+                </div>
+            </div>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
+                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 150){
+                nav.classList.add('nav__black');
+            }
+            else{
+                nav.classList.remove('nav__black');
+            }
+        })
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/9ccc6f41fb.js" crossorigin="anonymous"></script>
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl/setup.js"></script>
+
+</body>
+</html>
