@@ -16,8 +16,8 @@
     <title>Netflix</title>
 </head>
 <body>
-    <header>
-        <div id="nav" class="container">
+    <header onload="whenLoad()" >
+        <div id="nav" class="container nav__transparent">
             <div class="informacoes">
                 <img class="logo" src="./img/NetflixLogo.png" alt="NETFLIX">
                 <nav>
@@ -35,14 +35,17 @@
         </div>
     </header>
 
-    <main>
-        <div class="teste">
+    <main onload="trailer_stop()" onmouseenter="trailer_start()" onmouseleave="trailer_stop()">
+        <div class="background-filme">
+            <video autoplay muted loop id="bg_video" class="trailer"">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </video>
             <div class="principal-filme">
                 <div class="container">
                     <!-- <h3 class="titulo">Round 6</h3> -->
                     <img class="titulo" src="./img/Round6Logo.png" alt="Logo Round 6">
                     <p class="descricao">Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais.</p>
-                    <div class="botoes">
+                    <div id="TESTE" class="botoes">
                         <button role="button" class="botao-assistir">
                             <i class="fas fa-play"></i>
                             Assistir
@@ -54,54 +57,58 @@
                     </div>
                 </div>
             </div>
-            <div class="carrosel-filmes">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
-                </div>
-            </div>
-            <div class="carrosel-filmes">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
-                    <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
-                </div>
-            </div>
         </div>
     </main>
 
+    <div class="filmes">
+        <div class="carrosel-filmes-assistindo">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
+            </div>
+        </div>
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini1.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini2.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini3.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini4.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini5.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini6.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini7.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini8.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini9.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini10.jpg" alt=""> </div>
+                <div class="item"> <img class="box-filme" src="./img/miniaturas/mini11.jpg" alt=""> </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        const nav = document.getElementById('nav');
+        /*const nav = document.getElementById('nav');
 
         window.addEventListener('scroll', () => {
-            if(window.scrollY >= 150){
-                nav.classList.add('nav__black');
-            }
-            else{
-                nav.classList.remove('nav__black');
-            }
-        })
+        if(window.scrollY >= 130){
+            nav.classList.add('nav__black');
+            nav.classList.remove('nav__transparent');
+        }
+        else{
+            nav.classList.add('nav__transparent');
+            nav.classList.remove('nav__black');
+        }
+        })*/
     </script>
 
-    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/9ccc6f41fb.js" crossorigin="anonymous"></script>
     <script src="./js/owl/jquery.min.js"></script>
     <script src="./js/owl/owl.carousel.min.js"></script>
