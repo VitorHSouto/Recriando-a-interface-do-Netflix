@@ -96,7 +96,7 @@ header nav a:hover{
 
 .background-filme{
     position: relative;
-    background-image: linear-gradient(90deg, rgba(0,0,0,1),rgba(0,0,0,.20)120%), url("/img/Round6Fundo.jpg");
+    background-image: linear-gradient(90deg, rgba(0,0,0,1),rgba(0,0,0,.20)120%), url("../img/Round6Fundo.jpg");
 
     height: 500px;
     background-size: cover;
