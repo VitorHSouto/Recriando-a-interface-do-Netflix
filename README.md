@@ -1,4 +1,4 @@
-# Recriando-a-interface-do-Netflix
+# Recriando a interface do Netflix
 
 ## 📑 Sobre
 Nesse projeto foi reconstruído a interface do Netflix dentro do bootcamp HTML Web Developer.
